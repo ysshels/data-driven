@@ -1,0 +1,139 @@
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+/*基础页面样式*/
+.page-seat{
+    padding-top: 15px;
+    font-size: 12px;
+    color: #999999;
+}
+.text-blue{
+    color: #7295d2;
+}
+
+/*新图标实现方式*/
+.ico{
+    padding: 2px 18px 6px 2px;
+    margin-right: 15px;
+    position: relative;
+    top:-2px;
+}
+
+.right-seat{
+    float: right;
+    margin-right: 43px;
+}
+.btn-basis {
+    color: #fff;
+    background-color: #5572a5;
+    border-color: #5572a5;
+    margin-left: 30px;
+}
+
+.btn-basis:hover,.btn-basis:active,.btn-basis:focus{
+    color: #FFF;
+}
+
+.selected{
+    width: 182px;
+    height: 32px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    color: #696969;
+    margin-right: 25px;
+
+}
+
+.select-group{
+    margin-top: 50px;
+}
+
+.new-table-box {
+    border: 1px solid #EEE;
+    margin-top: 15px;
+    min-height: 600px;
+    background: #FFF;
+
+}
+
+/*table-overflow 文字不换行*/
+
+.table-overflow {
+    position: relative;
+    overflow-x: auto;
+    margin-bottom: 15px;
+    overflow-y: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.table-overflow > .table > thead > tr > th,
+.table-overflow > .table > tbody > tr > th,
+.table-overflow > .table > tfoot > tr > th,
+.table-overflow > .table > thead > tr > td,
+.table-overflow > .table > tbody > tr > td,
+.table-overflow > .table > tfoot > tr > td {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+
+/*new-table 新表格布局*/
+
+.new-table {}
+
+.new-table-box {
+    border: 1px solid #EEE;
+    margin-top: 15px;
+    min-height: 600px;
+    background: #FFF;
+}
+
+.new-table>thead>tr>th {
+    border-right: 1px solid #FFF;
+    border-bottom: none;
+    background-color: #DfDFDF;
+}
+
+.new-table>thead>tr>th:last-child {
+    border-right: none;
+}
+
+.new-table>tbody>tr>td,
+.new-table>thead>tr>th {
+    border-right: 1px solid #f4f4f4;
+    font-size: 12px;
+    color: #555555;
+    height: 46px;
+    padding-left: 20px;
+}
+
+.new-table>tbody>tr>td,
+.new-table>tbody>tr:last-child>td {
+    border-bottom: 1px solid #EEEEEE;
+}
+
+
+.btn-dark {
+    color: #fff;
+    background-color: #5572a5;
+    border-color: #5572a5;
+    width: 50px;
+    height: 24px;
+    line-height:10px;
+    font-size: 12px;
+
+
+}
+
+.btn-dark:hover,.btn-dark:active,.btn-dark:focus{
+    color: #FFF;
+}

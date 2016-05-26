@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>主页</title>
+    <!-- Bootstrap -->
+    <link href="static/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link  href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/basis.css">
+    <link rel="stylesheet" type="text/css" href="static/css/jcsj/ppgl.css">
+
+    <script src="static/js/jquery/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body>
+<!--nav栏-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="row">
+            <!--nav-logo-->
+            <div class="navbar-header col-sm-3 col-md-2">
+                <a class="navbar-brand logo " href="#"><img src="static/img/logo.png"/></a>
+            </div>
+            <!--nav-logo-->
+            <!--nav-登录详情 -->
+            <div id="navbar" class="navbar-collapse collapse ">
+                <ul class="nav navbar-nav navbar-right ">
+                    <li role="presentation" class="dropdown marg-r-40">
+                        <a class="user-icon-zjl " data-toggle="dropdown" href="#" role="button">
+                            操作记录</span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="dropdown marg-r-40">
+                        <a class="user-icon-box" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                           aria-expanded="false">
+                            我叫胡老大<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu " aria-labelledby="dropdownMenu1">
+                            <li><a class="user upd-icon" href="">账户设置</a></li>
+                            <li><a class="user logout-icon" href="">退出登录</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--nav-登录详情 -->
+        </div>
+    </div>
+</nav>
+<!--nav栏-->
+
+<!--左侧导航-->
+<div class="container-fluid">
+    <div id="" class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar menu">
+                <!--级菜单////二级菜单menu-second-->
+                <li class="" role="presentation">
+                    <a class="" href="JavaScript:;"><i class="sjtg menu-icon"></i>推广数据<span
+                            class="pull-right down-icon"></span></a>
+                </li>
+                <li class="">
+                    <a href="" class="menu-second-box cli-manage" data-toggle="dropdown"><i class="jcsj menu-icon"></i>基础数据<span
+                            class="pull-right down-icon"></span></a>
+                    <ul class="menu-second">
+                        <li class=""><a class="merchants-distribution" href=""><i class="ppgl menu-icon-sencond"></i>品牌管理</a>
+                        </li>
+                        <li><a href="" class="liveness"><i class="idbiao menu-icon-sencond"></i>商品ID对照表</a></li>
+                        <li><a href="" class="deposit-customer"><i class="zhgl menu-icon-sencond"></i>账号管理</a></li>
+                        <li><a href="" class="second-pick-goods"><i class="qxgl menu-icon-sencond"></i>权限管理</a></li>
+                    </ul>
+                </li>
+                <!--级菜单////二级菜单menu-second-->
+            </ul>
+        </div>
+        <script type="text/javascript">
+            $('.menu a,.menu li.active a').click(function () {
+                $(this).parent('li').toggleClass('active');
+                $(this).parent('li').siblings().removeClass('active');
+            })
+        </script>
+        <!--main里的内容-->
+        <div id="main" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <!--表头-->
+            <p class="page-seat">当前位置 ： 基础数据 < <a href="">品牌管理</a></p>
+            <h4 class="page-header">
+                <i class="ico ico-jcsj-ppgl"></i>
+                品牌管理
+                <a class="btn btn-basis " data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo"><i
+                        class="icon-add"></i>添加品牌</a>
+                <a class="right-seat" href=""><img src="static/img/Arrow.png"></a>
+            </h4>
+            <!--表头-->
+
+            <!--选择框组-->
+            <div class="select-group">
+                <select class="selected" >
+                    <option class="">类别</option>
+                    <option>手机</option>
+                    <option>电脑</option>
+                    <option>型号</option>
+                </select>
+                <!--类别-->
+
+                <!--全部品牌-->
+                <select class="selected" >
+                    <option class="">全部品牌</option>
+                    <option>手机</option>
+                    <option>电脑</option>
+                    <option>型号</option>
+                </select>
+                <!--全部品牌-->
+
+                <!--全部型号-->
+                <select class="selected" >
+                    <option class="">全部型号</option>
+                    <option>手机</option>
+                    <option>电脑</option>
+                    <option>型号</option>
+                </select>
+                <!--全部型号-->
+
+                <!--版本制式-->
+                <select class="selected" >
+                    <option class="">版本制式</option>
+                    <option>手机</option>
+                    <option>电脑</option>
+                    <option>型号</option>
+                </select>
+                <!--版本制式-->
+                <!--选择框组-->
+
+                <button class="btn btn-primary btn-default">筛选</button>
+            </div>
+            <!--类别-->
+
+            <!--表格内容-->
+            <div class="tab-pane fade in active " >
+                <!--table-box-->
+                <div class="table-task-list new-table-box table-overflow ">
+                    <table class="table table-hover new-table">
+                        <thead>
+                        <tr>
+                            <th>类别</th>
+                            <th>品牌</th>
+                            <th>型号</th>
+                            <th>版本制式</th>
+                            <th>数据日期</th>
+                            <th>最新导入时间</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td>手机</td>
+                            <td>xiaomi/小米</td>
+                            <td>小米手机5</td>
+                            <td>顶配版双网通</td>
+                            <td>2016.05.05</td>
+                            <td>2016.05.05  &nbsp;09：26</td>
+                            <td>
+                                <button class="btn  btn-dark">查看</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>手机</td>
+                            <td>xiaomi/小米</td>
+                            <td>小米手机5</td>
+                            <td>顶配版双网通</td>
+                            <td>2016.05.05</td>
+                            <td>2016.05.05  &nbsp;09：26</td>
+                            <td>
+                                <button class="btn  btn-dark">查看</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>手机</td>
+                            <td>xiaomi/小米</td>
+                            <td>小米手机5</td>
+                            <td>顶配版双网通</td>
+                            <td>2016.05.05</td>
+                            <td>2016.05.05  &nbsp;09：26</td>
+                            <td>
+                                <button class="btn  btn-dark">查看</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>手机</td>
+                            <td>xiaomi/小米</td>
+                            <td>小米手机5</td>
+                            <td>顶配版双网通</td>
+                            <td>2016.05.05</td>
+                            <td>2016.05.05  &nbsp;09：26</td>
+                            <td>
+                                <button class="btn btn-dark">查看</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>手机</td>
+                            <td>xiaomi/小米</td>
+                            <td>小米手机5</td>
+                            <td>顶配版双网通</td>
+                            <td>2016.05.05</td>
+                            <td>2016.05.05  &nbsp;09：26</td>
+                            <td>
+                                <button class="btn  btn-dark">查看</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>手机</td>
+                            <td>xiaomi/小米</td>
+                            <td>小米手机5</td>
+                            <td>顶配版双网通</td>
+                            <td>2016.05.05</td>
+                            <td>2016.05.05  &nbsp;09：26</td>
+                            <td>
+                                <button class="btn  btn-dark">查看</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>手机</td>
+                            <td>xiaomi/小米</td>
+                            <td>小米手机5</td>
+                            <td>顶配版双网通</td>
+                            <td>2016.05.05</td>
+                            <td>2016.05.05  &nbsp;09：26</td>
+                            <td>
+                                <button class="btn  btn-dark">查看</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>手机</td>
+                            <td>xiaomi/小米</td>
+                            <td>小米手机5</td>
+                            <td>顶配版双网通</td>
+                            <td>2016.05.05</td>
+                            <td>2016.05.05  &nbsp;09：26</td>
+                            <td>
+                                <button class="btn  btn-dark">查看</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>手机</td>
+                            <td>xiaomi/小米</td>
+                            <td>小米手机5</td>
+                            <td>顶配版双网通</td>
+                            <td>2016.05.05</td>
+                            <td>2016.05.05  &nbsp;09：26</td>
+                            <td>
+                                <button class="btn  btn-dark">查看</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>手机</td>
+                            <td>xiaomi/小米</td>
+                            <td>小米手机5</td>
+                            <td>顶配版双网通</td>
+                            <td>2016.05.05</td>
+                            <td>2016.05.05  &nbsp;09：26</td>
+                            <td>
+                                <button class="btn  btn-dark">查看</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>手机</td>
+                            <td>xiaomi/小米</td>
+                            <td>小米手机5</td>
+                            <td>顶配版双网通</td>
+                            <td>2016.05.05</td>
+                            <td>2016.05.05  &nbsp;09：26</td>
+                            <td>
+                                <button class="btn  btn-dark">查看</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--table-box-->
+            </div>
+            <!--表格内容-->
+        </div>
+
+        <!--main里的内容-->
+    </div>
+</div>
+
+<!--bootstrap js-->
+<script src="static/js/jquery/jquery-1.11.3.min.js"></script>
+<script src="static/bootstrap/js/bootstrap.min.js"></script>
+<!--bootstrap js-->
+</body>
+
+</html>

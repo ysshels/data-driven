@@ -1,0 +1,15 @@
+.container-fluid > .row{
+    margin: 0;
+}
+.ico-jcsj-ppgl{
+    background: url(../../img/jcsj/ppgl.png) no-repeat center;
+}
+
+.icon-add{
+    display: inline-block;
+    margin-right: 8px;
+    width: 8px;
+    height: 8px;
+    background: url(../../img/tj.png) no-repeat center;
+}
+
